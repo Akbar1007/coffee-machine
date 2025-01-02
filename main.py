@@ -10,6 +10,7 @@ is_on = True
 
 while is_on:
     options = my_menu.get_items()
+    print("Welcome to coffee machine.")
     choice = input(f"What would you like? ({options}): ")
     if choice == 'off':
         is_on = False
