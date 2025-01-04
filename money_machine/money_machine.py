@@ -22,6 +22,13 @@ class MoneyMachine:
         print("Please insert coins.")
         for coin in self.COIN_VALUES:
             self.money_received += int(input(f"How many {coin}?: ")) * self.COIN_VALUES[coin]
+            # checks for non-numeric inputs:
+            if self.money_received.is_integer() == False:  
+                print("Invalid input. Please try again.")
+                self.money_received = 0
+                self.process_coins()
+                break
+            
         return self.money_received
 
     def make_payment(self, cost):
