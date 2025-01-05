@@ -7,7 +7,7 @@ my_coffee_maker = CoffeeMaker()
 my_menu = Menu()
 
 is_on = True
-print("Coffee machine is on")
+print("Coffee machine is on.")
 
 while is_on:
     options = my_menu.get_items()
