@@ -7,14 +7,14 @@ my_coffee_maker = CoffeeMaker()
 my_menu = Menu()
 
 is_on = True
-print("Welcome to coffee machine.")
+print("Coffee machine is on")
 
 while is_on:
     options = my_menu.get_items()
     choice = input(f"What would you like? {options}: ")
     if choice == 'off':
         is_on = False
-        print("Coffee machine is turned off.")
+        print("Coffee machine is off.")
     elif choice == 'report':
         print("")
         my_coffee_maker.report()
