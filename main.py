@@ -14,7 +14,9 @@ while is_on:
     choice = input(f"What would you like? {options}: ")
     if choice == 'off':
         is_on = False
+        print("Coffee machine is turned off.")
     elif choice == 'report':
+        print("")
         my_coffee_maker.report()
         my_money_machine.report()
     else:

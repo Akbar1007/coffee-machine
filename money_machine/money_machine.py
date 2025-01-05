@@ -15,7 +15,10 @@ class MoneyMachine:
 
     def report(self):
         """Prints the current profit"""
-        print(f"Money: {self.CURRENCY}{self.profit}")
+        
+        print(f"\nCurrent profit:\n{self.CURRENCY}{self.profit}.")
+    
+    # TO-DO: add review, feedback, or complaints - for future
 
     def process_coins(self):
         """Returns the total calculated from coins inserted."""
